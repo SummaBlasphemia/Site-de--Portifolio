@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(45deg, #fcf96b, #ff8a50, #ff5e62);
+    margin: 0;
+}
+
+h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px #888888;
+}
+
+p {
+  color: white;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 5px 5px #888888;
+}
+
+.colunas {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px;
+}
+
+.grupo {
+  width: 400px;
+}
+
+.titulo {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 5px 5px #888888;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  color: white;
+  font-size: 30px;
+  margin: 50px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #555;
+  text-align: center;
+}
+
+.colunacontatos {
+  columns: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* opcional, se quiser alinhar verticalmente também */
+  flex-direction: column; /* mantém os contatos empilhados */
+}
+
+.colunacontatos hover {
+ width: 450px;
+ box-shadow: 0px 5px 10px #555;
+ transition: 1s;
+}
+
+.contatos {
+  color: white;
+  width: 300px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 50px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  right: 0px;
+ }
