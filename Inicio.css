@@ -1,22 +1,61 @@
 body {
-      background: linear-gradient(45deg, #fcf96b, #ff8a50, #ff5e62);
+      background: linear-gradient(135deg, #1e1e2f, #3a3a78);
       margin: 0;
       font-family: 'Clash Display', sans-serif;
     }
 
+    html {
+  scroll-behavior: smooth;
+}
+
+    @media (max-width: 768px) {
+  .cabeçalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+   h1 {
+    font-size: 40px;
+  }
+
+  p {
+   font-size: 20px;
+   color: #f0f0f0;
+   text-shadow: 4px 4px 5px #555;
+  }
+}
+
     h1 {
-      font-size: 90px;
+      font-size: 70px;
       color: white;
       text-align: center;
-      text-shadow: 5px 5px #888888;
+      text-shadow: 4px 4px 5px #555;
     }
 
     p {
       color: white;
-      font-size: 20px;
+      font-size: 25px;
       text-align: center;
-      text-shadow: 5px 5px #888888;
+      text-shadow: 4px 4px 5px #555;
     }
+
+    .cabeçalho {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  padding: 30px 100px;
+}
+
+.cabeçalho a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.cabeçalho a:visited {
+  color: white;
+}
 
     .colunas {
       color: white;
@@ -33,7 +72,7 @@ body {
 
     .titulo {
       font-size: 50px;
-      text-shadow: 0px 5px 5px #888888;
+      text-shadow: 4px 4px 5px #555;
       margin-bottom: 20px;
       text-align: center;
       color: white;
@@ -45,7 +84,7 @@ body {
       margin: 50px 0 20px 0;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      box-shadow: 0px 5px 10px #555;
+      box-shadow: 1px 3px 5px #555;
       text-align: center;
       padding: 20px;
     }
@@ -58,12 +97,12 @@ body {
       margin-top: 30px;
     }
 
-    footer {
-      font-size: 20px;
-      margin-top: 60px;
-      text-align: center;
-      color: white;
-      font-size: 16px;
-      text-shadow: 1px 1px #333;
-      text-align: center;
-    }
+    footer p {
+  margin: 10px;
+}
+
+.LinkContato {
+  margin: 0 8px;
+  color: white;
+  text-decoration: underline;
+}
