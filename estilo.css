@@ -114,6 +114,7 @@ body {
 
 .card {
   color: white;
+  border: 2px solid white;
   font-size: 30px;
   margin: 50px 0 20px 0;
   background: rgba(255, 255, 255, 0.1);
