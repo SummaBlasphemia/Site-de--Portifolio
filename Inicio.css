@@ -1,22 +1,32 @@
 body {
-      background: linear-gradient(135deg, #1e1e2f, #3a3a78);
+      background: linear-gradient(135deg, #d0c3f7, #d0b0d3);
       margin: 0;
       font-family: 'Clash Display', sans-serif;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     html {
   scroll-behavior: smooth;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-    @media (max-width: 768px) {
-  .cabeçalho {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
+
    h1 {
-    font-size: 40px;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 5px #555;
+  }
+
+  h2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 5px #555;
   }
 
   p {
@@ -24,14 +34,7 @@ body {
    color: #f0f0f0;
    text-shadow: 4px 4px 5px #555;
   }
-}
 
-    h1 {
-      font-size: 70px;
-      color: white;
-      text-align: center;
-      text-shadow: 4px 4px 5px #555;
-    }
 
     p {
       color: white;
@@ -45,16 +48,47 @@ body {
   justify-content: flex-end;
   gap: 100px;
   padding: 30px 100px;
+  text-shadow: 4px 4px 5px #555;
 }
 
 .cabeçalho a {
   font-size: 25px;
   color: white;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cabeçalho a:hover {
+  transform: scale(1.2);
+  text-shadow: 6px 6px 8px #555;
 }
 
 .cabeçalho a:visited {
   color: white;
+}
+
+    .principal:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.sobre:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.trabalhos:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.contato:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
 }
 
     .colunas {
@@ -97,12 +131,15 @@ body {
       margin-top: 30px;
     }
 
-    footer p {
-  margin: 10px;
-}
-
 .LinkContato {
   margin: 0 8px;
   color: white;
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 40px 0 20px;
 }
