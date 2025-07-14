@@ -10,38 +10,6 @@ body {
   font-family: 'Clash Display', sans-serif;
 }
 
-.monitor {
-    background-color: lightblue;
-    position: absolute;
-    border: solid;
-    width: 137vh;
-    height: 72.5vh;
-    left: 24.5vh;
-    top: 6.5vh;
-}
-.apps-pc {
-  display: flex;
-  flex-wrap: wrap;   
-  width: 25%;        /* Permite quebrar linha */
-  justify-content: center;   /* Centraliza horizontalmente */
-  position: absolute;
-  top: 10vh;
-  left: 20vh;
-}
-
-.app-icone {
- width: 25px;
- height: 25px;
- border: solid black;
- margin: 5 auto
-}
-
-.app {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
-
 .cabeçalho {
   display: flex;
   justify-content: flex-end;
@@ -95,3 +63,51 @@ body {
   text-shadow: 6px 6px 8px #555;
   transition: 0.5s;
 }
+
+.monitor {
+    background-color: lightblue;
+    position: absolute;
+    border: solid;
+    width: 137vh;
+    height: 72.5vh;
+    left: 24.5vh;
+    top: 6.5vh;
+}
+.apps-pc {
+  display: flex;
+  flex-wrap: wrap;   
+  width: 25%;        /* Permite quebrar linha */
+  justify-content: center;   /* Centraliza horizontalmente */
+  position: absolute;
+  gap: 50px;
+  top: 10vh;
+  left: 25vh;
+}
+
+.app-conatiner {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.apps-pc:focus {
+ border: black;
+}
+.app-icone {
+ width: 25px;
+ height: 25px;
+ border: solid black;
+ margin: 5 auto
+}
+
+.app {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+.app-container.selecionado {
+  border: 2px solid #0078D7; /* azul tipo Windows */
+  background-color: rgba(0, 120, 215, 0.2);
+}
+
