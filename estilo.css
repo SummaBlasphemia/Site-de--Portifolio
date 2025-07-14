@@ -5,7 +5,7 @@ body {
       height: 100%;
       display: flex;
       flex-direction: column;
-    }
+}
 
     html {
   scroll-behavior: smooth;
@@ -43,7 +43,7 @@ body {
       text-shadow: 4px 4px 5px #555;
     }
 
-    .cabeçalho {
+  .cabeçalho {
   display: flex;
   justify-content: flex-end;
   gap: 100px;
@@ -86,6 +86,12 @@ body {
 }
 
 .contatos:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.joguinho:hover {
   font-size: 30px;
   text-shadow: 6px 6px 8px #555;
   transition: 0.5s;

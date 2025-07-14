@@ -1,0 +1,97 @@
+body {
+  background: 
+    url(Imagens/Computador.png) no-repeat center center,
+    linear-gradient(135deg, #d0c3f7, #d0b0d3);
+  
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+
+  font-family: 'Clash Display', sans-serif;
+}
+
+.monitor {
+    background-color: lightblue;
+    position: absolute;
+    border: solid;
+    width: 137vh;
+    height: 72.5vh;
+    left: 24.5vh;
+    top: 6.5vh;
+}
+.apps-pc {
+  display: flex;
+  flex-wrap: wrap;   
+  width: 25%;        /* Permite quebrar linha */
+  justify-content: center;   /* Centraliza horizontalmente */
+  position: absolute;
+  top: 10vh;
+  left: 20vh;
+}
+
+.app-icone {
+ width: 25px;
+ height: 25px;
+ border: solid black;
+ margin: 5 auto
+}
+
+.app {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.cabeçalho {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  padding: 30px 100px;
+  text-shadow: 4px 4px 5px #555;
+}
+
+.cabeçalho a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cabeçalho a:hover {
+  transform: scale(1.2);
+  text-shadow: 6px 6px 8px #555;
+}
+
+.cabeçalho a:visited {
+  color: white;
+}
+
+.principal:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.sobre:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.trabalhos:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.contatos:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
+
+.joguinho:hover {
+  font-size: 30px;
+  text-shadow: 6px 6px 8px #555;
+  transition: 0.5s;
+}
