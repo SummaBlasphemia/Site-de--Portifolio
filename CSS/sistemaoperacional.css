@@ -1,6 +1,6 @@
 body {
   background: 
-    url(Imagens/Computador.png) no-repeat center center,
+    url(../Imagens/Computador.png) no-repeat center center,
     linear-gradient(135deg, #d0c3f7, #d0b0d3);
   
   background-size: contain, cover;
