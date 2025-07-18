@@ -30,4 +30,3 @@ window.onload = () => {
     retina_detect: true,
   });
 };
->>>>>>> baffa85de898b962c832de2735819ace4094e76c

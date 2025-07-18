@@ -1,20 +1,29 @@
-body {
-  background: 
-    url(../Imagens/Computador.png) no-repeat center center,
-    linear-gradient(135deg, #d0c3f7, #d0b0d3);
-  
-  background-size: contain, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, center center;
-
+body, html {
+  width: 100%;
+  height: 100%;
   font-family: 'Clash Display', sans-serif;
+  background: transparent;
+  overflow: hidden;
+}
+  
+#tela {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../Imagens/Computador.png) no-repeat center center;
+  background-size: contain;
+  z-index: 2;
 }
 
 .cabeçalho {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   gap: 100px;
   padding: 30px 100px;
+  z-index: 3;
   text-shadow: 4px 4px 5px #555;
 }
 
@@ -65,14 +74,16 @@ body {
 }
 
 .monitor {
-    background-color: lightblue;
-    position: absolute;
-    border: solid;
-    width: 137vh;
-    height: 72.5vh;
-    left: 24.5vh;
-    top: 6.5vh;
+  background-color: lightblue;
+  position: absolute;
+  border: solid;
+  width: 140vh;
+  height: 73.5vh;
+  left: 24.5vh;
+  top: 6.5vh;
+  z-index: 1;
 }
+
 .apps-pc {
   display: flex;
   flex-wrap: wrap;   
@@ -82,6 +93,7 @@ body {
   gap: 50px;
   top: 10vh;
   left: 25vh;
+  z-index: 3;
 }
 
 .app-container {
@@ -111,3 +123,55 @@ body {
   background-color: rgba(0, 120, 215, 0.2);
 }
 
+.janela {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 2px solid #333;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+  top: 150px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  resize: both;
+  overflow: auto;
+  z-index: 9999; /* Garante que ficará sobre tudo */
+}
+
+.janela-header {
+  background-color: #0078D7;
+  color: white;
+  padding: 10px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.janela-body {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.fechar-janela {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#particulas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(270deg, #8880a1, #947d96, #9b8391);
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
