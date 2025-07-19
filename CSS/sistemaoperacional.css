@@ -15,6 +15,7 @@ body, html {
   z-index: 2;
 }
 
+/* Organização do cabeçalho */
 .cabeçalho {
   position: absolute;
   top: 0;
@@ -43,36 +44,13 @@ body, html {
   color: white;
 }
 
-.principal:hover {
-  font-size: 30px;
-  text-shadow: 6px 6px 8px #555;
-  transition: 0.5s;
-}
-
-.sobre:hover {
-  font-size: 30px;
-  text-shadow: 6px 6px 8px #555;
-  transition: 0.5s;
-}
-
-.trabalhos:hover {
-  font-size: 30px;
-  text-shadow: 6px 6px 8px #555;
-  transition: 0.5s;
-}
-
-.contatos:hover {
-  font-size: 30px;
-  text-shadow: 6px 6px 8px #555;
-  transition: 0.5s;
-}
-
 .joguinho:hover {
   font-size: 30px;
   text-shadow: 6px 6px 8px #555;
   transition: 0.5s;
 }
 
+/* Organização de elementos como a imagem do monitor em volta e organização dos aplicativos */
 .monitor {
   background-color: lightblue;
   position: absolute;
@@ -87,8 +65,8 @@ body, html {
 .apps-pc {
   display: flex;
   flex-wrap: wrap;   
-  width: 25%;        /* Permite quebrar linha */
-  justify-content: center;   /* Centraliza horizontalmente */
+  width: 25%;        
+  justify-content: center;   
   position: absolute;
   gap: 50px;
   top: 10vh;
@@ -119,7 +97,7 @@ body, html {
 }
 
 .app-container.selecionado {
-  border: 2px solid #0078D7; /* azul tipo Windows */
+  border: 2px solid #0078D7; 
   background-color: rgba(0, 120, 215, 0.2);
 }
 
@@ -163,7 +141,7 @@ body, html {
   cursor: pointer;
 }
 
-
+/* Organização das particulas de fundo  */
 #particulas {
   position: fixed;
   top: 0;

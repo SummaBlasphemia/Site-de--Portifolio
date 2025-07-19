@@ -16,12 +16,14 @@ body {
   flex-direction: column;
 }
 
+/* Animação das cores de fundo  */
    @keyframes gradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
 
+/* Organização de elementos de textos e configurando os mesmos  */
    h1 {
     font-size: 70px;
     color: white;
@@ -37,12 +39,13 @@ body {
   }
 
   p {
-   font-size: 20px;
+   font-size: 30px;
    text-align: center;
    color: #f0f0f0;
    text-shadow: 4px 4px 5px #555;
   }
 
+/* Organização do cabeçalho e hovers de cada classe  */
   .cabeçalho {
   display: flex;
   justify-content: flex-end;
@@ -98,6 +101,7 @@ body {
   transition: 0.5s;
 }
 
+/* Organização e configuração de classes, divs e IDs  */
 .colunas {
   color: white;
   display: flex;
@@ -157,6 +161,7 @@ body {
   transform: scale(1.1);
 }
 
+/* Organização das particulas de fundo  */
 #particulas {
   position: fixed;
   top: 0;
@@ -167,6 +172,7 @@ body {
   background: transparent;
 }
 
+/* Organização do cabeçalho  */
 footer {
   text-align: center;
   color: white;
