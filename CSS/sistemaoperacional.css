@@ -114,7 +114,7 @@ body, html {
   flex-direction: column;
   resize: both;
   overflow: auto;
-  z-index: 9999; /* Garante que ficará sobre tudo */
+  z-index: 9999;
 }
 
 .janela-header {
